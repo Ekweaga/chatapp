@@ -1,0 +1,14 @@
+<div class="form"><h1>Sign Up</h1><form class="example-form">
+  <mat-form-field class="example-full-width">
+    <mat-label>Email</mat-label>
+    <input matInput placeholder="Enter Email" name="userEmail" value="" #userEmail required [(ngModel)]='email'>
+  </mat-form-field><br><br>
+  <mat-form-field class="example-full-width">
+    <mat-label>Password</mat-label>
+    <input matInput placeholder="Password" name="userPassword" value="" type="password" #userPassword required [(ngModel)]='password'>
+  </mat-form-field><br><br>
+  <mat-form-field class="example-full-width">
+    <mat-label>Username</mat-label>
+    <input matInput placeholder="Username" value="" #UserName [(ngModel)]='Username'>
+  </mat-form-field><br><br>
+  <button mat-raised-button color="primary" (click)="SignUp(userEmail.value, userPassword.value,UserName.value)">SIGN UP</button></form></div>

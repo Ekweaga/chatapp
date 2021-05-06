@@ -1,0 +1,9 @@
+<form>
+    <input type="text" #textvalue required name="textvalue" auto-complete='off' required placeholder="Send message" (keyup.enter)="send(textvalue.value)"[(ngModel)]="message"></form>
+<button (click)="send(textvalue.value)">Send</button>
+<div *ngFor = "let usermsg of itemsdata$ | async">
+    {{usermsg.message}}<br>
+    {{usermsg.time}}<br>
+    {{usermsg.User}}<br>
+    
+</div>

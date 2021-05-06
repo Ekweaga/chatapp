@@ -1,0 +1,20 @@
+<h1> Login Email</h1>
+
+<mat-form-field class="example-full-width">
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="Enter Email" name="userEmail" value="" #userEmail required>
+    </mat-form-field><br><br>
+    <mat-form-field class="example-full-width">
+      <mat-label>Password</mat-label>
+      <input matInput placeholder="Password" name="userPassword" value="" type="password" #userPassword required>
+    </mat-form-field><br><br>
+    <button mat-raised-button color="primary" (click)="EmailSignIn(userEmail.value, userPassword.value)">LOGIN</button>
+
+
+
+      <button mat-raised-button color="primary">Log in with Facebook</button>
+      <button mat-raised-button color="primary">Log in with Google</button>
+      
+    
+    
+    
